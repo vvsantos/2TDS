@@ -7,3 +7,13 @@ CREATE TABLE tb_pedido (
 
 INSERT INTO TB_PEDIDO VALUES (1,SYSDATE,'TV','PROCESSADO');
 COMMIT;
+INSERT INTO tb_pedido (
+    id,
+    data,
+    produto
+) VALUES (
+    2,
+    sysdate + 2,
+    'Televisão'
+);
+SELECT * FROM TB_PEDIDO;
